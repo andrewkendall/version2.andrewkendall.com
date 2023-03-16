@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/main.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Andrew Kendall - Installing Apache &amp; Perl For Windows Tutorial</title>
+<!-- InstanceEndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="../../../../../css/styles.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="../../../../../javascript/main.js" type="text/javascript"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YWZTRCQNHW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YWZTRCQNHW');
+</script>
+
+</head>
+<body onload="MM_preloadImages('/images/menubuttons/home2.gif','/images/menubuttons/news2.gif','/images/menubuttons/profile2.gif','/images/menubuttons/workb2.gif','/images/menubuttons/learning2.gif','/images/menubuttons/downloads2.gif','/images/menubuttons/links2.gif','/images/menubuttons/misc2.gif','/images/menubuttons/contact2.gif','/images/menubuttons/gallery2.gif')">
+<table summary="" width="640"  border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="40" align="right" class="bordernobottom"><img src="../../../../../images/logo.gif" alt="Andrew Kendall (http://www.andrewkendall.com)" width="157" height="21" /><img src="../../../../../images/spacer.gif" alt="" width="21" height="21" /></td>
+  </tr>
+  <tr>
+    <td height="13" align="center" class="border"><a href="../../../../../index.html"><img src="../../../../../images/menubuttons/homeb.gif" alt="Home" name="Home" width="28" height="13" border="0" id="Home" onmouseover="MM_swapImage('Home','','/images/menubuttons/home2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../newscurrent.html"><img src="../../../../../images/menubuttons/news.gif" alt="News" name="News" width="28" height="13" border="0" id="News" onmouseover="MM_swapImage('News','','/images/menubuttons/news2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../profile.html"><img src="../../../../../images/menubuttons/profile.gif" alt="Profile" name="Profile" width="42" height="13" border="0" id="Profile" onmouseover="MM_swapImage('Profile','','/images/menubuttons/profile2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../gallery.html"><img src="../../../../../images/menubuttons/gallery.gif" alt="Gallery" name="Gallery" width="45" height="13" border="0" id="Gallery" onmouseover="MM_swapImage('Gallery','','/images/menubuttons/gallery2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../work.html"><img src="../../../../../images/menubuttons/workb.gif" alt="Work" name="Work" width="28" height="13" border="0" id="Work" onmouseover="MM_swapImage('Work','','/images/menubuttons/workb2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../learning.html"><img src="../../../../../images/menubuttons/learning.gif" alt="Learning" name="Learning" width="49" height="13" border="0" id="Learning" onmouseover="MM_swapImage('Learning','','/images/menubuttons/learning2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../downloads.html"><img src="../../../../../images/menubuttons/downloads.gif" alt="Downloads" name="Downloads" width="62" height="13" border="0" id="Downloads" onmouseover="MM_swapImage('Downloads','','/images/menubuttons/downloads2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../links.html"><img src="../../../../../images/menubuttons/links.gif" alt="Links" name="Links" width="28" height="13" border="0" id="Links" onmouseover="MM_swapImage('Links','','/images/menubuttons/links2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../misc.html"><img src="../../../../../images/menubuttons/misc.gif" alt="Misc" name="Misc" width="24" height="13" border="0" id="Misc" onmouseover="MM_swapImage('Misc','','/images/menubuttons/misc2.gif',1)" onmouseout="MM_swapImgRestore()" /></a><img src="../../../../../images/menubuttons/divide.gif" alt="" width="13" height="13" /><a href="../../../../contact.html"><img src="../../../../../images/menubuttons/contact.gif" alt="Contact" name="Contact" width="47" height="13" border="0" id="Contact" onmouseover="MM_swapImage('Contact','','/images/menubuttons/contact2.gif',1)" onmouseout="MM_swapImgRestore()" /></a></td>
+  </tr>
+  <tr>
+    <td height="35" valign="bottom"><!-- InstanceBeginEditable name="title" --><img src="../../../../../images/titles/learning.gif" alt="Learning" width="84" height="24" /><!-- InstanceEndEditable --></td>
+  </tr>
+  <tr>
+    <td class="bordertopline">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><!-- InstanceBeginEditable name="main" --><span class="subheading">Objective </span>
+        <p class="body">Setup a Windows based web server and enable the use of
+          CGI scripts.</p>
+        <p class="subheading">For this you will need</p>
+        <p class="body">Any version of Windows greater than 95.<br />
+          Apache Web Server (<a href="http://www.apache.org" target="_blank">www.apache.org</a>)<br />
+          FTP Server (<a href="http://www.bpftpserver.com" target="_blank">www.bpftpserver.com</a>)<br />
+          FTP Client (<a href="http://www.cuteftp.com" target="_blank">www.cuteftp.com</a>)<br />
+          Perl (<a href="http://www.activestate.com" target="_blank">www.activestate.com</a>)<br />
+      CGI Test script (<a href="test.zip">Download</a>)</p>
+        <p class="subheading">Further resources</p>
+        <p class="body">Free CGI scripts (<a href="http://www.cgi-resources.com" target="_blank">www.cgi-resources.com</a>)</p>
+        <p class="body">Step by step guide</p>
+        <ol>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/1.downloading_apache_for_windows.php" target="_blank">Downloading
+              Apache For Windows</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/2.downloading_bulletproof_ftp_server.php" target="_blank">Downloading
+              BulletProof FTP Server</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/3.downloading_cuteftp.php" target="_blank">Downloading
+              CuteFTP</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/4.downloading_perl_for_windows.php" target="_blank">Downloading
+              Perl For Windows</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/5.testing_ip_settings.php" target="_blank">Testing
+              IP Settings</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/6.installing_apache.php" target="_blank">Installing
+              Apache</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/7.changing_apache_conf.php" target="_blank">Changing
+              Apache Conf</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/8.testing_apache.php" target="_blank">Testing
+              Apache</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/9.setting_up_ftp_server.php" target="_blank">Setting
+              Up FTP Server</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/10.setting_up_and_using_cuteftp.php" target="_blank">Setting
+              Up And Using CuteFTP</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/11.installing_perl.php" target="_blank">Installing
+              Perl</a></li>
+          <li class="body"><a href="https://version2.andrewkendall.com/pages/learning/tutorials/cgi/apachewin/12.setting_up_script_path.php" target="_blank">Setting
+              Up Script Path</a></li>
+        </ol>
+        <p class="body">After all of the above steps are completed place the
+          CGI Test Script into your CGI directory and access it through your
+          apache server. If all has gone well you will see the message. &quot;This
+          CGI script works!&quot;</p>
+        <p class="body">If so fantastic, go download more CGI scripts from <a href="http://www.cgi-resources.com" target="_blank">www.cgi-resources.com</a> and
+          try to get some of these to work on your local machine.</p>
+        <!-- InstanceEndEditable --></td>
+  </tr>
+  <tr>
+    <td height="40" valign="bottom"><div align="center"><span class="smalltext"> Copyright &copy; 
+        2023          Andrew Kendall</span></div></td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>
